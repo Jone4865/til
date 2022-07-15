@@ -1,0 +1,51 @@
+1. 기술의 장단점, 역사, 탄생배경을 궁금해해라
+
+2. 부트스트랩 말고 벌마*도 있음
+이것도 임포트 하고 사용(내 기준 부트스트랩보다 훨씬 직관적임)
+
+3. 해시 함수란 - 임의의 데이터를 받아 임의의 고정된 길이의 값으로 변환해주는 함수
+
+4. 벌마로 로그인페이지를 만들면 is-hidden 클래스로 상황별 해당 항목을 숨기거나 보일 수 있다.
+해당 항목에 is-hidden을 class로 먹이고, 
+언제 먹일건지 상황에 함수를 준다.
+function toggle_sign_up() {
+            $("#sign-up-box").toggleClass("is-hidden")
+            $("#div-sign-in-or-up").toggleClass("is-hidden")
+            $("#btn-check-dup").toggleClass("is-hidden")
+            $("#help-id").toggleClass("is-hidden")
+            $("#help-password").toggleClass("is-hidden")
+            $("#help-password2").toggleClass("is-hidden")
+        }
+
+아이디 비밀번호 정규표현식(비밀번호에 특수문자 포함해라 등)
+2~10자 사이라는 정규식임 소괄호는 필수 포함 항목 /d는 숫자를 의미
+
+function is_nickname(asValue) {
+    var regExp = /^(?=.*[a-zA-Z])[-a-zA-Z0-9_.]{2,10}$/;
+    return regExp.test(asValue);
+}
+
+function is_password(asValue) {
+    var regExp = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z!@#$%^&*]{8,20}$/;
+    return regExp.test(asValue);
+}
+
+5. 자바스크립트는 숫자연산자와 같이 쓰면 숫자로 처리한다 +S처럼
+
+6. 함수가 집 for 문 같은건 방
+
+7. 컴퓨터는 1이 참 0이 펄스다
+
+8. LET은 해당 함수에서만 통용
+   Const는 딱 한 번!
+   val는 다른 함수에서도 사용n
+
+--- 더 알아봐야 할 부분 ---
+1. 삼항연산자!
+
+2. forEach map filter reduce 4형제
+
+3. 타입스크립트
+
+4. 스페이스 비트윈(html 문법 알아보기)
+5. 호이스팅(함수 알아보기)
